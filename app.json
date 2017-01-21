@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/meizi/meizi",
+    "pages/android/android",
+    "pages/ios/ios",
+    "pages/news/news",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "干货集中营",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "#f6f6f6",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/meizi/meizi",
+        "iconPath": "image/home_normal.png",
+        "selectedIconPath": "image/home_select.png",
+        "text": "妹子"
+      },
+      {
+        "pagePath": "pages/android/android",
+        "iconPath": "image/icon_kline_star_gray.png",
+        "selectedIconPath": "image/icon_kline_star_yellow.png",
+        "text": "android"
+      },
+      {
+        "pagePath": "pages/ios/ios",
+        "iconPath": "image/icon_kline_star_gray.png",
+        "selectedIconPath": "image/icon_kline_star_yellow.png",
+        "text": "ios"
+      },
+      {
+        "pagePath": "pages/h5/html5",
+        "iconPath": "image/market_normal.png",
+        "selectedIconPath": "image/market_select.png",
+        "text": "前端"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "iconPath": "image/wechat_nomal.png",
+        "selectedIconPath": "image/wechat_select.png",
+        "text": "八卦"
+      }
+    ]
+  }
+}
