@@ -4,6 +4,7 @@
     "pages/android/android",
     "pages/ios/ios",
     "pages/news/news",
+    "pages/h5/html5",
     "pages/logs/logs"
   ],
   "window": {
