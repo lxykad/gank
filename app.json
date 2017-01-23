@@ -5,7 +5,9 @@
     "pages/ios/ios",
     "pages/news/news",
     "pages/h5/html5",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/index/index"
+
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -44,7 +46,7 @@
         "text": "前端"
       },
       {
-        "pagePath": "pages/news/news",
+        "pagePath": "pages/index/index",
         "iconPath": "image/wechat_nomal.png",
         "selectedIconPath": "image/wechat_select.png",
         "text": "八卦"
