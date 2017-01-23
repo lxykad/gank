@@ -12,8 +12,10 @@ Page({
         var that = this
 
         wx.request({
-            url: "https://gank.io/api/data/福利/10/1",
-            data: {},
+            url: "https://gank.io/api/data/%E7%A6%8F%E5%88%A9/10/1",
+            data: {
+               
+            },
             method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
             header: { 'Accept': 'application/json' }, // 设置请求的 header
             success: function (res) {
@@ -66,5 +68,5 @@ Page({
             path: 'path' // 分享路径
         }
     }
-   
+
 })

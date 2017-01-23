@@ -1,2 +1,5 @@
+
 <!--pages/index/center.wxml-->
-<text>news</text>
+<view wx:for="{{newsItems}}" wx:key="this">
+  <text>{{index+1}}-{{item.desc}}</text>
+</view>

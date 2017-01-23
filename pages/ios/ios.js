@@ -1,10 +1,28 @@
 Page({
   data:{
-   
+   iosItems:[]
   },
   onLoad:function(options){
     // 生命周期函数--监听页面加载
-    
+    var that = this
+    wx.request({
+      url: 'https://gank.io/api/data/iOS/10/1',
+      data: {},
+      method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
+      // header: {}, // 设置请求的 header
+      success: function(res){
+        // success
+        that.setData({
+          iosItems:res.data.results
+        })
+      },
+      fail: function() {
+        // fail
+      },
+      complete: function() {
+        // complete
+      }
+    })
   },
   onReady:function(){
     // 生命周期函数--监听页面初次渲染完成

@@ -46,7 +46,7 @@
         "text": "前端"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/news/news",
         "iconPath": "image/wechat_nomal.png",
         "selectedIconPath": "image/wechat_select.png",
         "text": "八卦"

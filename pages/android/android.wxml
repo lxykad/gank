@@ -1,2 +1,5 @@
+
 <!--pages/index/android.wxml-->
-<text>android</text>
+<view wx:for="{{androidItems}}" wx:key="this">
+  <text>{{index+1}}-{{item.desc}}</text>
+</view>

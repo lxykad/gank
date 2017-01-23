@@ -1,9 +1,31 @@
 Page({
   data:{
-   
+   androidItems:[]
   },
   onLoad:function(options){
     // 生命周期函数--监听页面加载
+    //
+    var that = this
+
+    wx.request({
+      url: 'https://gank.io/api/data/Android/10/1',
+      data: {},
+      method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
+      // header: {}, // 设置请求的 header
+      success: function(res){
+        // success
+        console.log(res.data.results)
+        that.setData({
+          androidItems:res.data.results
+        })
+      },
+      fail: function() {
+        // fail
+      },
+      complete: function() {
+        // complete
+      }
+    })
     
   },
   onReady:function(){

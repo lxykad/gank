@@ -1,10 +1,29 @@
 Page({
   data: {
-
+    h5Items: []
   },
   onLoad: function (options) {
     // 生命周期函数--监听页面加载
+    var that = this
 
+    wx.request({
+      url: 'https://gank.io/api/data/%E5%89%8D%E7%AB%AF/10/1',
+      data: {},
+      method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
+      // header: {}, // 设置请求的 header
+      success: function (res) {
+        // success
+        that.setData({
+          h5Items: res.data.results
+        })
+      },
+      fail: function () {
+        // fail
+      },
+      complete: function () {
+        // complete
+      }
+    })
   },
   onReady: function () {
     // 生命周期函数--监听页面初次渲染完成

@@ -1,2 +1,4 @@
 <!--pages/index/ios.wxml-->
-<text>ios</text>
+<view wx:for="{{iosItems}}" wx:key="this">
+  <text>{{index+1}}-{{item.desc}}</text>
+</view>
