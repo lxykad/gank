@@ -13,7 +13,8 @@
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "干货集中营",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
   },
   "tabBar": {
     "color": "#000000",
@@ -49,7 +50,7 @@
         "pagePath": "pages/news/news",
         "iconPath": "image/wechat_nomal.png",
         "selectedIconPath": "image/wechat_select.png",
-        "text": "八卦"
+        "text": "休息视频"
       }
     ]
   }

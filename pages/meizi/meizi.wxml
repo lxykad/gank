@@ -1,6 +1,6 @@
 
 <!--index.wxml-->
-<scroll-view scroll-y="true" style="height: 100%;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+<scroll-view scroll-y="true" style="height: {{scrollHeight}}" bindscrolltoupper="refresh" bindscrolltolower="loadMore" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
   <view wx:for="{{news}}" wx:for-item="news_item" wx:key="this">
     <image style="width: 100%; height: 200px; background-color: #eeeeee;" src="{{news_item.url}}" mode="aspectFill"></image>
   </view>
